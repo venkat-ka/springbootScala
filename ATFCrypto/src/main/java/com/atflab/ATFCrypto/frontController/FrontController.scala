@@ -12,6 +12,6 @@ class FrontController {
 
   @GetMapping(Array("/hello"))
   def demo: String = {
-    "Welcome to Janus executor engine."
+    "Welcome to Spring boot scala."
   }
 }
