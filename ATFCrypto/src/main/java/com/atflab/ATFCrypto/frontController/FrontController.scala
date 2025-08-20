@@ -1,17 +1,27 @@
 package com.atflab.ATFCrypto.frontController
 
-import org.springframework.web.bind.annotation.{GetMapping, RestController}
+import com.atflab.ATFCrypto.model.RequestModel
+import org.springframework.http.MediaType
+import org.springframework.web.bind.annotation.{GetMapping, RequestMapping, RestController}
 
 
 @RestController
 class FrontController {
-//  @GetMapping(Array("/hello"))
-//  def sayHello(): Map[String, String] = {
-//    Map("message" -> "Hello from Scala and Spring Boot!")
-//  }
+
+
+
+
+  @RequestMapping(Array("/encrypt"), produces=Array(MediaType.APPLICATION_JSON),
+    consumes=Array(MediaType.APPLICATION_JSON))
+  def encrypt(): RequestModel = {
+    new RequestModel();
+  }
 
   @GetMapping(Array("/hello"))
   def demo: String = {
     "Welcome to Spring boot scala."
   }
+
+
+
 }
