@@ -16,7 +16,7 @@ class FrontController @Autowired()(cryptoService: CryptographicService){
   @RequestMapping(value=Array("/encrypt"), produces=Array(MediaType.APPLICATION_JSON_VALUE),
     consumes=Array(MediaType.APPLICATION_JSON_VALUE))
   def encrypt(@RequestBody request: EncryptRequestModel): ResponseEntity[EncryptResponseModel] = {
-    val encryptData: EncryptResponseModel = cryptoService.mapEntityToDto(request);
+    var encryptData: EncryptResponseModel = cryptoService.mapEntityToDto(request);
      ResponseEntity.status(HttpStatus.CREATED).body(encryptData);
   }
 
