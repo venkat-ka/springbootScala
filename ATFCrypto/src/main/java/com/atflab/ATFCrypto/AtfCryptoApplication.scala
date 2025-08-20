@@ -1,4 +1,4 @@
-package com.atflab.ATFCrypto.frontController
+package com.atflab.ATFCrypto
 
 
 import org.springframework.boot.SpringApplication
