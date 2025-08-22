@@ -21,7 +21,7 @@ class EncryptResponseModel {
   def getSalt: String = salt
   def getNonce: String = nonce
   def getIv: String = iv
-  def cypherText: String = _cypherText
+  def getCypherText: String = _cypherText
 
   def cypherText_=(value: String): Unit = {
     _cypherText = value.toUpperCase
