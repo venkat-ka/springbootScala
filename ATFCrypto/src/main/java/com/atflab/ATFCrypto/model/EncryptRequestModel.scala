@@ -1,7 +1,7 @@
 package com.atflab.ATFCrypto.model
 //
 //@AllArgsConstructor
- case class EncryptRequestModel(plainText:String,algorithm:String,salt:String,nonce:String,four:String){
+ case class EncryptRequestModel(plainText:String,algorithm:String,salt:String,nonce:String,iv:String){
 
   //  private var plainText: String = _
   //  private var algorithm: String = _
