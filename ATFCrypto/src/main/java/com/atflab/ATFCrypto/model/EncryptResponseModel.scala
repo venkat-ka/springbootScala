@@ -23,8 +23,16 @@ class EncryptResponseModel {
   def getIv: String = iv
   def getCypherText: String = _cypherText
 
-  def cypherText_=(value: String): Unit = {
-    _cypherText = value.toUpperCase
+//  def cypherText_=(value: String): Unit = {
+//    _cypherText = value.toUpperCase
+//  }
+
+  def setcypherText(name: String): Unit = {
+    _cypherText = name
+  }
+
+  def setPlainText(name: String): Unit = {
+    plainText = name
   }
 
 }
