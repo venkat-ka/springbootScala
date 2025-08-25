@@ -13,7 +13,6 @@
  2) Framework - Spring boot
  3)  
 
+**Liberary used on Implementation**
+ 1) ModelMapper
 
-Hello world end point
- Api - http://localhost:8080/hello
-ModelMapper used
